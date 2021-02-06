@@ -17,3 +17,13 @@ const Template = ({ onClick, ...args }) => ({
 });
 
 export const Primary = Template.bind({});
+Primary.args = {
+  primary: true,
+  disabled: false
+}
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  primary: false,
+  disabled: false
+}

@@ -25,13 +25,28 @@ button:disabled {
   color: rgba(245, 250, 254, 0.3);
 }
 
+button:enabled:active {
+  color: #F5FAFE;
+  background: #0C090D;
+
+  border: 2px solid #0C090D;
+}
+
+
+button.secondary {
+  background-color: red;
+}
 </style>
 
 <script>
+  export let primary=false;
   export let disabled=false;
 
 </script>
 
-<button {disabled} on:click>
+<button 
+  {disabled}
+  class="{primary === false ? 'secondary' : ''}"
+  on:click>
   <slot>Example</slot>
 </button>
