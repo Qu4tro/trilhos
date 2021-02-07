@@ -1,7 +1,7 @@
 import Button from './Button.svelte';
 
 export default {
-  title: 'Example/Button',
+  title: 'Trilhos/Button',
   component: Button,
   argTypes: {
     onClick: { action: 'onClick' },

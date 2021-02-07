@@ -34,8 +34,22 @@ button:enabled:active {
 
 
 button.secondary {
-  background-color: red;
+  color: #F5FAFE;
+  background-color: transparent;
+  border: 2px solid #F5FAFE;
 }
+
+button.secondary:disabled {
+  color: rgba(245, 250, 254, 0.3);
+  border: 2px solid rgba(245, 250, 254, 0.3);
+}
+
+button.secondary:enabled:active {
+  color: #0C090D;
+  background-color: transparent;
+  border: 2px solid #0C090D;
+}
+
 </style>
 
 <script>
